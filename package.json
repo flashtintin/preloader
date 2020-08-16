@@ -1,0 +1,33 @@
+{
+  "name": "vue-fetch-plugin",
+  "version": "2.0.9",
+  "description": "a fetch plugin for vue",
+  "private": true,
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "babel src --out-dir lib",
+    "prepublishOnly": "npm run compile",
+    "pretest": "yarn build",
+    "test": "node test/index.js",
+    "build": "webpack"
+  },
+  "keywords": [
+    "preload",
+    "async/await"
+  ],
+  "author": "kid",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.11.0",
+    "lodash": "^4.17.20",
+    "mime": "^2.4.6",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
