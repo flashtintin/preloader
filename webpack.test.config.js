@@ -1,10 +1,9 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/preloader.js",
-  mode: "production",
+  entry: "./test/test.js",
   output: {
     filename: "index.js",
-    path: path.resolve(__dirname, "lib"),
+    path: path.resolve(__dirname, "test/dist"),
   },
 };
