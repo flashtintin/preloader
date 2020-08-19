@@ -10,12 +10,9 @@
   "scripts": {
     "compile": "babel src --out-dir lib",
     "prepublishOnly": "npm run compile",
-    "pretest": "yarn build",
-    "test": "webpack --config webpack.test.config.js",
-    "posttest": "node test/index.js",
-    "build": "webpack",
-    "prebuildtest": "yarn build",
-    "buildtest": "webpack --config webpack.test.config.js"
+    "pretest": "webpack --config webpack.test.config.js",
+    "test": "node test/index.js",
+    "build": "webpack"
   },
   "keywords": [
     "preload",
